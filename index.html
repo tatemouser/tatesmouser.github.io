@@ -85,14 +85,15 @@
 
                     <div class="vertical-layout">
                         <hr>
-                        <div class="horizontal-layout">
+                        <div class="contact-horizontal-layout">
                             <div class="text-container">
-                                <div class="vertical-layout">
+                                <div class="contact-vertical-layout">
                                     <a><strong>Name:</strong> Tate Mouser</a>
-                                    <a href="mailto:tatesmouser@gmail.com"><strong>Email:</strong> tatesmouser@gmail.com</a>
+                                    <a href="mailto:tatesmouser@gmail.com"><strong><span style="color: black;">Email:</span></strong> tatesmouser@gmail.com</a>
                                 </div>
+                                
                             </div>
-                            <div class="vertical-layout">
+                            <div class="contact-vertical-layout">
                                 <a href="Assets/TateMouserResume2024.pdf" download="proposed_file_name" class="download-link">
                                     <button type="submit" class="name-button">Download Resume</button>
                                 </a>
@@ -155,81 +156,77 @@
                         <div class="heading">Projects</div>
                         <div class="sub-heading">2018-2024</div>
 
-                        <div class="project-box-container"> 
-                            <div class="vertical-layout">
-                                <div class="horizontal-layout">
-                                    <div class="project-box">
-                                        <a> AutoCorrect </a>
-                                        <a href="https://github.com/tatemouser/NoKeyboardAlgorithm">
-                                            <img src="Assets/keyboardProject.jpg" alt="project">
-                                        </a>
-
-                                        <p>Java application that generates words from a 10-button numeric keyboard. 
-                                            Utilizing word bank data and a bigram language model, the program scores 
-                                            the next possible words, returning the highest. The program deploys both 
-                                            forward and backward conversions for numbers to words and words to numbers. 
-                                            The UI displays the program steps and each possible combination.</p>
-
-                                        <ul>
-                                            <li>25,000 word training data</li>
-                                            <li>Full Java UI</li>
-                                            <li>Prediction with pairwise combinations</li>
-                                            <li>Manipulating CSV File</li>
-                                        </ul>
-                                    </div>
-                                    <div class="project-box">
-                                        <a> Sentiment Analysis </a>
-                                        <a href="https://github.com/tatemouser/SentimentAnalysis">
-                                            <img src="Assets/sentimentAnalysis.png" alt="project">
-                                        </a>
-                                        <p>This Java program takes a URL as input and displays a window 
-                                        showing the percentages of 10 emotions used throughout the text. </p>
-                                        <ul>
-                                            <li>65,000 point training data</li>
-                                            <li>Read CSV file</li>
-                                            <li>Prefix node tree</li>
-                                            <li>SWT UI</li>
-                                            <li>Web Scraping</li>
-                                            <li>Word strength scoring</li>
-                                        </ul>
-                                    </div>
-                                    <div class="project-box">
-                                        <a> Order Fulfillment  </a>
-                                        <a href="https://github.com/tatemouser/InStoreRobot">
-                                            <img src="Assets/orderFulfillment.png" alt="project">
-                                        </a>
-                                        <p>Java application designed to locate items on a shelf. 
-                                        The program takes a sentence, searches Google to find an image, 
-                                        scrapes the image, cleans it with OpenCV, and finally traces 
-                                        the item using SurfDetector.</p>
-                                        <ul>
-                                            <li>URL searching</li>
-                                            <li>Generate descriptor / keypoint matrix</li>
-                                            <li>Homography alligning</li>
-                                            <li>Packages: JSOUP / OPENCV / SWT</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="horizontal-layout">
-                                    <div class="project-box" style="filter: brightness(30%);">
-                                        <a> Coming Soon </a>
-                                        <img src="Assets/profilePicture.webp">
-                                        <a> TBD </a>
-                                    </div>
-                                    <div class="project-box" style="filter: brightness(30%);">
-                                        <a> Coming Soon </a>
-                                        <img src="Assets/profilePicture.webp">
-                                        <a> TBD </a>
-                                    </div>
-                                    <div class="project-box" style="filter: brightness(30%);">
-                                        <a> Coming Soon </a>
-                                        <img src="Assets/profilePicture.webp">
-                                        <a> TBD </a>
-                                    </div>
-                                </div>
+                        <div class="project-box-container">
+                            <div class="project-box">
+                                <a href="https://github.com/tatemouser/NoKeyboardAlgorithm">
+                                    <img src="Assets/keyboardProject.jpg" alt="project">
+                                </a>
+                                <a> AutoCorrect </a>
+                                <p>Java application that generates words from a 10-button numeric keyboard. 
+                                    Utilizing word bank data and a bigram language model, the program scores 
+                                    the next possible words, returning the highest. The program deploys both 
+                                    forward and backward conversions for numbers to words and words to numbers. 
+                                    The UI displays the program steps and each possible combination.</p>
+                                <ul>
+                                    <li>25,000 word training data</li>
+                                    <li>Full Java UI</li>
+                                    <li>Prediction with pairwise combinations</li>
+                                    <li>Manipulating CSV File</li>
+                                </ul>
                             </div>
-                        <div>
-                    </div>
+                        
+                            <div class="project-box">
+                                <a href="https://github.com/tatemouser/SentimentAnalysis">
+                                    <img src="Assets/sentimentAnalysis.png" alt="project">
+                                </a>
+                                <a> Sentiment Analysis </a>
+                                <p>This Java program takes a URL as input and displays a window 
+                                showing the percentages of 10 emotions used throughout the text. </p>
+                                <ul>
+                                    <li>65,000 point training data</li>
+                                    <li>Read CSV file</li>
+                                    <li>Prefix node tree</li>
+                                    <li>SWT UI</li>
+                                    <li>Web Scraping</li>
+                                    <li>Word strength scoring</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="project-box">
+                                <a href="https://github.com/tatemouser/InStoreRobot">
+                                    <img src="Assets/orderFulfillment.png" alt="project">
+                                </a>
+                                <a> Order Fulfillment </a>
+                                <p>Java application designed to locate items on a shelf. 
+                                The program takes a sentence, searches Google to find an image, 
+                                scrapes the image, cleans it with OpenCV, and finally traces 
+                                the item using SurfDetector.</p>
+                                <ul>
+                                    <li>URL searching</li>
+                                    <li>Generate descriptor/keypoint matrix</li>
+                                    <li>Homography aligning</li>
+                                    <li>Packages: JSOUP / OPENCV / SWT</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="project-box" style="filter: brightness(30%);">
+                                <a> Coming Soon </a>
+                                <img src="Assets/profilePicture.webp">
+                                <a> TBD </a>
+                            </div>
+                        
+                            <div class="project-box" style="filter: brightness(30%);">
+                                <a> Coming Soon </a>
+                                <img src="Assets/profilePicture.webp">
+                                <a> TBD </a>
+                            </div>
+                        
+                            <div class="project-box" style="filter: brightness(30%);">
+                                <a> Coming Soon </a>
+                                <img src="Assets/profilePicture.webp">
+                                <a> TBD </a>
+                            </div>
+                        </div>                        
                 </div>
 
                 
@@ -251,8 +248,8 @@
                         <input type="text" id="subject" name="subject" placeholder="Subject" required>
                         <textarea id="message" name="message" placeholder="Message" required></textarea>
                         
-                                <!--hCaptcha-->
                         <div class="h-captcha" data-captcha="true"></div>
+                        
                         <button type="submit">Submit</button>
                         <div id="form-result"></div>
                     </form>  

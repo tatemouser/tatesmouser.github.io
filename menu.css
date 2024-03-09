@@ -42,6 +42,16 @@ hr {
     flex-direction: column;
 }
 
+.contact-horizontal-layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-vertical-layout {
+    display: flex;
+    flex-direction: column;
+}
+
 .center-layout {
     display: flex;
     justify-content: center; 
@@ -229,6 +239,7 @@ button {
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-width: 30%;
 }
 
 .project-box img {
@@ -454,6 +465,46 @@ a:focus {
     .content-container {
         padding-left: 3vh;
         padding-right: 3vh;
+    }
+
+    .contact-container {
+        padding-left: 3vh;
+        padding-right: 3vh;
+    }
+
+
+    .project-box {
+        border-radius: 1vh;
+        background-color: white;
+        margin: 10px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        min-width: 80%;
+    }
+
+    .h-captcha {
+        max-width: 300px;
+        overflow: hidden;
+    }
+
+    .contact-horizontal-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-vertical-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-text-img img {
+        width: 100%;
+    }
+
+        
+    .about-me-text-img {
+        font-size: 1.1em;
     }
 
 }
