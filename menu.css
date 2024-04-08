@@ -233,7 +233,6 @@ button {
 }
 
 .project-box {
-    border-radius: 1vh;
     background-color: white;
     margin: 10px;
     flex: 1;
@@ -263,6 +262,7 @@ button {
     padding-left: 20px;
     font-size: 12px; /* Optional: Adjust font size */
     /* line-height: 1.5;  */
+    
 }
 
 
