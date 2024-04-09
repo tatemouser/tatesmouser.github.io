@@ -74,11 +74,13 @@ hr {
 .header-text {
     font-size: 6vw;
     font-weight: bold;
+    white-space: normal;
 }
 
 .subheader-text {
     font-size: 3vw;
     font-weight: bold;
+    white-space: normal;
 }
 
 
