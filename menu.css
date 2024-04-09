@@ -72,12 +72,12 @@ hr {
 }
 
 .header-text {
-    font-size: 10vh;
+    font-size: 6vw;
     font-weight: bold;
 }
 
 .subheader-text {
-    font-size: 10vh;
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -441,6 +441,18 @@ a:focus {
     MISC
 ----------------------------------------------------- */
 
+@media (max-width: 1000px) {
+    .header-text {
+        font-size: 10vw;
+        font-weight: bold;
+    }
+
+    .subheader-text {
+        font-size: 6vw;
+        font-weight: bold;
+    }
+}
+
 @media (max-width: 600px) {
     .header-text {
         font-size: 6vh;
@@ -451,6 +463,7 @@ a:focus {
         font-size: 5vh; 
         text-wrap: wrap;
     }
+
     .content-container {
         padding: 4vh;
         padding-left: 6vh; 

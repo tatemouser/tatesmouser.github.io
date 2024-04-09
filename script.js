@@ -1,22 +1,27 @@
-// script.js
+// Function to fetch and update the role strings from a PHP file
+async function updateRole() {
+    try {
+        const response = await fetch('roles.php');
+        const role = await response.json(); // Assuming the PHP file returns JSON
+        initializeTyped(role); // Initialize Typed.js with the fetched role
+    } catch (error) {
+        console.error('Error fetching role:', error);
+    }
+}
 
-$(document).ready(function () {
-    $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
+// Function to initialize Typed.js for the role placeholder
+function initializeTyped(role) {
+    var typed = new Typed(".auto-type", {
+        strings: role, // Use the fetched role strings
+        startDelay: 1000,
+        typeSpeed: 50,
+        backSpeed: 50,
+        cursorChar: '\u25ae',
+        loop: true,
+        autoInsertCss: true,
+        smartBackspace: true,
     });
+}
 
-    // Handle the click event on sidebar links
-    $('.list-unstyled.components li a').on('click', function () {
-        $('.list-unstyled.components li').removeClass('active'); // Remove 'active' class from all items
-        $(this).closest('li').addClass('active'); // Add 'active' class to the clicked item
-    });
-
-    // Handle the sidebar toggle button click event
-    $('#sidebarCollapse').on('click', function () {
-        $('#sidebar, #content').toggleClass('active');
-        $('.collapse.in').toggleClass('in');
-        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-    });
-});
-
-
+// Update role initially
+updateRole();
