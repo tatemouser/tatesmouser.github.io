@@ -145,19 +145,18 @@ button {
 }
 
 
-
 .about-me-text-img {
     margin: 0 auto;
     font-size: 1.3em;
     width: 100%;
-    padding: 1em 0 1em 0 ;
+    padding: 1em 0 1em 0;
 }
 
 
 .about-me-text-img img {
     float: left;
     width: 40%;
-    max-width: 12em;
+    max-width: 15em;
     height: 40%;
     padding: 0 10px 0 0;
 }
@@ -438,6 +437,49 @@ a:focus {
     }  
 } */
 
+.project-spotlight-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: gray;
+    margin: 10px;
+    background-color: #dcdcdc;
+    border-radius: 2vh;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+.project-spotlight-image-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.project-spotlight-image-stack img {
+    width: 50vh;
+    height: 30vh;
+}
+
+.project-spotlight-image-stack-twin {
+    display: flex;
+    gap: 10px;
+}
+
+.project-spotlight-image-stack-twin img {
+    width: 25vh;
+    height: 30vh;
+}
+
+.project-spotlight-desc {
+    background-color: white;
+    margin: 10px;
+    border-radius: 2vh;
+    padding: 10px;
+}
+
+
 
 /* ---------------------------------------------------
     MISC
@@ -517,9 +559,42 @@ a:focus {
         width: 100%;
     }
 
-        
     .about-me-text-img {
         font-size: 1.1em;
     }
 
+    .project-spotlight-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: gray;
+        margin: 10px;
+        background-color: #dcdcdc;
+        border-radius: 2vh;
+        margin-top: 2vh;
+        justify-content: center;
+    }
+    
+    .project-spotlight-image-stack {
+        padding: 10px;
+    }
+    
+    .project-spotlight-image-stack img {
+        width: 50vh;
+        height: 30vh;
+    }
+    
+    .project-spotlight-image-stack-twin img {
+        width: 25vh;
+        height: 30vh;
+    }
+    
+    .project-spotlight-desc {
+        /* padding: 10px; */
+        background-color: white;
+        margin: 10px;
+        border-radius: 2vh;
+        padding: 10px;
+    }
+    
 }
