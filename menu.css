@@ -577,6 +577,7 @@ a:focus {
     
     .project-spotlight-image-stack {
         padding: 10px;
+        overflow: hidden;
     }
     
     .project-spotlight-image-stack img {
