@@ -43,6 +43,7 @@ hr {
 }
 
 .contact-horizontal-layout {
+    font-size: small;
     display: flex;
     flex-direction: row;
 }
@@ -193,15 +194,11 @@ mysql javascript php python
     background-color: white;
     min-height: 20vh;
 }
-
-
 .about-me-text-img {
     margin: 0 auto;
-    font-size: 1.3em;
-    width: 100%;
-    padding: 1em 0 1em 0;
+    width: 90%;
+    padding: 1em 0 0 0; /* Adjust padding if necessary */
 }
-
 
 .about-me-text-img img {
     float: left;
@@ -211,28 +208,35 @@ mysql javascript php python
     padding: 0 10px 0 0;
 }
 
+.vertical-layout hr {
+    margin-top: 0; /* Remove top margin of hr */
+    margin-bottom: 0.5em; /* Adjust as needed */
+}
 
+.contact-horizontal-layout {
+    display: flex;
+    justify-content: space-between;
+}
 
-  .resume-details {
-    margin-bottom: 3vh;
-    text-align: center;
-  }
+.contact-vertical-layout {
+    display: flex;
+    flex-direction: column;
+}
 
-
-  .text-container {
-    margin-top: .5vh;
+.text-container {
+    margin-top: 0; /* Remove top margin of text container */
     flex: 1;
     margin-right: 1em;
-    text-wrap: nowrap;
     display: flex;
     align-items: center;
 }
 
-    .name-button, .email-button {
-        margin-top: 0.5vh;
-        margin-right: 2vh; /* Adjust margin as needed */
-        width: 100%;
-    }
+.name-button, .email-button {
+    margin-top: 0.5vh;
+    margin-right: 2vh; /* Adjust margin as needed */
+    width: 100%;
+}
+
 
         /* ---------------------------------------------------
             SKILLS STYLE
