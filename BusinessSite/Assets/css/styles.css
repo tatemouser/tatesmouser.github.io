@@ -547,6 +547,8 @@ footer {
 
     .service-text {
         font-size: 0.8em;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .quote-button nav a {
