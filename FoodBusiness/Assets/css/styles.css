@@ -182,8 +182,6 @@ header {
     font-weight: 300;
     margin: 0;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-    color: inherit;
-    text-decoration: none;
 }
 
 .arrow {
@@ -230,9 +228,7 @@ header {
 }
 
 .contact-container h1, .contact-container h3 {
-    font-weight: 100; 
-    color: inherit; 
-    text-decoration: none;
+    font-weight: 100; /* Ensure all headings have the desired weight */
 }
 
 .contact-container button {
@@ -573,14 +569,9 @@ footer {
 /*------------------ MENU ------------------ */
 .menu-container {
     max-width: 100%; 
+    margin-top: 90px;
 }
 
-.menu-header {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 90px;
-    font-weight: bold;
-}
 
 .menu-images {
     display: flex;
@@ -596,15 +587,74 @@ footer {
     height: auto; 
 }
 
-.menu-header p {
-    color: #C10B0B;
+
+/*------------------ Schedule ------------------ */
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
 }
 
-.menu-header h2 {
-    font-weight: 100;;
+
+.map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.location-info {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px; /* Adjust this to match your map width */
+}
 
+.location-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.location-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Smaller map for desktop */
+    height: 0;
+    padding-bottom: 42.18%; /* Maintains the aspect ratio (16:9 for 600x253) */
+    margin: 0 auto;
+}
+
+.map-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #C10B0B;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+}
 
 @media (max-width: 768px) {
     .desktop-button {
@@ -715,10 +765,6 @@ footer {
     }
 
 /*---------menu----------*/
-    .menu-header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
 
     .menu-images {
         display: flex;
@@ -726,6 +772,21 @@ footer {
         gap: 5px; 
         margin: 0;
         margin-bottom: 5px;
+    }
+
+/*---------Schedule----------*/
+    .map-wrapper {
+        max-width: 100%;
+        padding-bottom: 56.25%; /* Return to 16:9 aspect ratio for mobile */
+    }
+
+    .location-info {
+        max-width: 100%;
+    }
+
+    .marker {
+        width: 14px;
+        height: 14px;
     }
 }
 
