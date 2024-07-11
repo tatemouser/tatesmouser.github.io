@@ -266,7 +266,7 @@ header {
 /*---------image-text----------*/
 .img-text-container {
     position: relative;
-    background-image: url('/Assets/images/food10.jpg');
+    background-image: url('/FoodBusiness/Assets/images/food10.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px 20px;
